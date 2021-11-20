@@ -1,0 +1,40 @@
+@keyframes profileCursor-bg {
+  from {
+    transform: none;
+  }
+  to {
+    background-color: #0056a3;
+  }
+}
+
+.settings__setting {
+  padding: 20px 5px;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.settings__setting:hover {
+  animation: profileCursor-bg 0.5s ease-in-out forwards;
+}
+
+.settings__setting i {
+  color: white;
+  opacity: 0.8;
+  margin-left: 5px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.settings-list .settings-list-second {
+  margin-top: 20px;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+  font-size: 15px;
+}

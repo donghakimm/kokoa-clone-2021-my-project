@@ -1,0 +1,61 @@
+@keyframes colorIngRed {
+  from {
+    transform: none;
+  }
+  to {
+    color: #f1494b;
+  }
+}
+@keyframes colorIngBlue {
+  from {
+    color: #0681ec;
+  }
+  to {
+    transform: none;
+  }
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.icon-row__icon {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-row__icon i {
+  font-size: 30px;
+}
+
+.icon-row__icon i:hover {
+  animation: colorIngRed 1s linear infinite;
+}
+
+.icon-row__icon span {
+  margin-top: 18px;
+}
+
+.icon-row__icon span:hover {
+  animation: colorIngBlue 1s linear infinite;
+}
+
+.icon-row__second {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.icon-row__second div {
+  margin-left: 10px;
+}
+
+.icon-row__second a:last-child div {
+  margin-left: 90px;
+}

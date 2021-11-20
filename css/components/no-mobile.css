@@ -1,0 +1,51 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-image: url("../../photo/spiderman_screendoor2.jfif");
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(-130px);
+  }
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+.spiderman-slide {
+  height: 300px;
+  width: 200px;
+  animation: slideUp 2s ease-in-out forwards;
+  margin-bottom: 30px;
+}
+
+#no-mobile span {
+  margin-bottom: 20px;
+  animation: slideBottom 1s ease-in-out forwards;
+}
+
+@media screen and (max-width: 500px) {
+  #no-mobile {
+    display: none;
+  }
+}

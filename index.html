@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to S.H.I.E.L.D. System</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>SKT</span>
+            <i class="fas fa-wifi"></i>
+        </div>          
+        <div class="status-bar__column">
+            <span>22:43</span>
+        </div> 
+        <div class="status-bar__column">
+            <span>75%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+        </div>        
+    </div>
+    <div class="welcome-logo">
+        <img src="photo/shield logo2.jpg" />
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to S.H.I.E.L.D. System</h1>
+        <p class="welcome-header__text1">
+            If you want to access S.H.I.E.L.D. system, 
+        </p>
+        <p class="welcome-header__text2">
+            log in with your agent # and password
+        </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input required minlength="5" name="username" type="text" placeholder="Agent #" />
+        <input required name="password" type="password" placeholder="Password" />
+        <input type="#" />
+        <input type="submit" value="Access" />
+        <a href="#">ANY DEMAGE MUST BE REPORTED IMMEDIATELY</a>
+    </form>
+
+    <div id="splash-screen">
+        <img src="photo/shield logo.jpg" />
+        <!--<i class="fas fa-comment"></i>-->
+    </div>
+
+    <div id="no-mobile">
+        <img src="photo/spiderman_screendoor3.png" class="spiderman-slide" />
+        <span>Your screen</span>
+        <span>is S.H.I.E.L.D.ed</span>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/56f0a689ae.js" crossorigin="anonymous"></script>
+</body>
+</html>
